@@ -22,7 +22,6 @@
 
 static const char * const IDPMama = "mama";
 static const char * const IDPPapa = "papa";
-static const char * const IDPMamaPapa = "mamapapa";
 
 bool IDPPrintIfMod(int value, int divisor, const char * const string) {
     bool didPrint = !(value % divisor);
@@ -35,9 +34,10 @@ bool IDPPrintIfMod(int value, int divisor, const char * const string) {
 }
 
 void IDPPrintMamaPapa(int value) {
-    if (IDPPrintIfMod(value, 3, IDPMama)
-        || IDPPrintIfMod(value, 5, IDPPapa))
-    {
+    bool didPrint = IDPPrintIfMod(value, 3, IDPMama);
+    didPrint = IDPPrintIfMod(value, 5, IDPPapa) || didPrint;
+
+    if (didPrint) {
         printf("\n");
     }
 }
