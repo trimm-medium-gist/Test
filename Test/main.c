@@ -10,6 +10,7 @@
 
 #include "IDPMamaPapa.h"
 #include "IDPFunctionMacro.h"
+#include "IDPBits.h"
 
 IDPGeneratePrintFunction(int, %d);
 
@@ -21,6 +22,9 @@ int main(int argc, const char **argv) {
     }
     
     IDPCallPrintFunction(int, count);
+    
+    IDPPrintIntBits(255);
+    IDPPrintIntBits(3);
     
     return 0;
 }
