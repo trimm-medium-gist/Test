@@ -24,20 +24,20 @@ static const char * const IDPMama = "mama";
 static const char * const IDPPapa = "papa";
 static const char * const IDPMamaPapa = "mamapapa";
 
-void IDPPrintMamaPapa(int value) {
-    bool didPrint = false;
-
-    if (!(value % 3)) {
-        printf("%s", IDPMama);
-        didPrint = true;
-    }
-    
-    if (!(value % 5)) {
-        printf("%s", IDPPapa);
-        didPrint = true;
-    }
+bool IDPPrintIfMod(int value, int divisor, const char * const string) {
+    bool didPrint = !(value % divisor);
     
     if (didPrint) {
+        printf("%s", string);
+    }
+    
+    return didPrint;
+}
+
+void IDPPrintMamaPapa(int value) {
+    if (IDPPrintIfMod(value, 3, IDPMama)
+        || IDPPrintIfMod(value, 5, IDPPapa))
+    {
         printf("\n");
     }
 }
