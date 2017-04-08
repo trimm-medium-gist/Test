@@ -9,6 +9,9 @@
 #include <stdio.h>
 
 #include "IDPMamaPapa.h"
+#include "IDPFunctionMacro.h"
+
+IDPGeneratePrintFunction(int, %d);
 
 int main(int argc, const char **argv) {
     const int count = 16;
@@ -16,6 +19,8 @@ int main(int argc, const char **argv) {
     for (int i = 0; i < count; i++) {
         IDPPrintMamaPapa(i);
     }
+    
+    IDPCallPrintFunction(int, count);
     
     return 0;
 }

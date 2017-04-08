@@ -20,10 +20,12 @@
 //Требования:
 //- необходимо в цикле пройти 1000 итераций, вывести номер итерации и передать номер итерации в метод.
 
-static const char * const IDPMama = "mama";
-static const char * const IDPPapa = "papa";
+typedef const char * const CCharRef;
 
-bool IDPPrintIfMod(int value, int divisor, const char * const string) {
+static CCharRef IDPMama = "mama";
+static CCharRef IDPPapa = "papa";
+
+bool IDPPrintIfMod(int value, int divisor, CCharRef string) {
     bool didPrint = !(value % divisor);
     
     if (didPrint) {
