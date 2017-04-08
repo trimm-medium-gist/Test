@@ -11,6 +11,7 @@
 		D761CA071E98F0670093F74E /* IDPMamaPapa.c in Sources */ = {isa = PBXBuildFile; fileRef = D761CA051E98F0670093F74E /* IDPMamaPapa.c */; };
 		D761CA0D1E98FA6B0093F74E /* IDPFunctionMacro.c in Sources */ = {isa = PBXBuildFile; fileRef = D761CA0B1E98FA6B0093F74E /* IDPFunctionMacro.c */; };
 		D761CA101E9901B10093F74E /* IDPBits.c in Sources */ = {isa = PBXBuildFile; fileRef = D761CA0E1E9901B10093F74E /* IDPBits.c */; };
+		D761CA131E990CB70093F74E /* IDPArray.c in Sources */ = {isa = PBXBuildFile; fileRef = D761CA111E990CB70093F74E /* IDPArray.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		D761CA0C1E98FA6B0093F74E /* IDPFunctionMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPFunctionMacro.h; sourceTree = "<group>"; };
 		D761CA0E1E9901B10093F74E /* IDPBits.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IDPBits.c; sourceTree = "<group>"; };
 		D761CA0F1E9901B10093F74E /* IDPBits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPBits.h; sourceTree = "<group>"; };
+		D761CA111E990CB70093F74E /* IDPArray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IDPArray.c; sourceTree = "<group>"; };
+		D761CA121E990CB70093F74E /* IDPArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				D761CA0C1E98FA6B0093F74E /* IDPFunctionMacro.h */,
 				D761CA0E1E9901B10093F74E /* IDPBits.c */,
 				D761CA0F1E9901B10093F74E /* IDPBits.h */,
+				D761CA111E990CB70093F74E /* IDPArray.c */,
+				D761CA121E990CB70093F74E /* IDPArray.h */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			files = (
 				D761C9FF1E98E7C10093F74E /* main.c in Sources */,
 				D761CA101E9901B10093F74E /* IDPBits.c in Sources */,
+				D761CA131E990CB70093F74E /* IDPArray.c in Sources */,
 				D761CA0D1E98FA6B0093F74E /* IDPFunctionMacro.c in Sources */,
 				D761CA071E98F0670093F74E /* IDPMamaPapa.c in Sources */,
 			);

@@ -9,7 +9,6 @@
 #include "IDPBits.h"
 
 #include <stdio.h>
-#include <stdint.h>
 
 static const uint8_t IDPBitsInByte  = 8;
 static const uint8_t IDPLSBit       = 1 << (IDPBitsInByte - 1);
