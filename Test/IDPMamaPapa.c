@@ -8,6 +8,9 @@
 
 #include "IDPMamaPapa.h"
 
+#include <stdio.h>
+#include <stdbool.h>
+
 //2. Создать метод, который бы имел, как параметр, целое число.
 //Пользовательские истории:
 //- если на вход приходит число, кратное 3, то в консоль должно быть выведено: "мама";
@@ -22,11 +25,19 @@ static const char * const IDPPapa = "papa";
 static const char * const IDPMamaPapa = "mamapapa";
 
 void IDPPrintMamaPapa(int value) {
+    bool didPrint = false;
+
     if (!(value % 3)) {
         printf("%s", IDPMama);
-    } else if (!(value % 5)) {
+        didPrint = true;
+    }
+    
+    if (!(value % 5)) {
         printf("%s", IDPPapa);
-    } else if (!(value % 15)) {
-        printf("%s", IDPMamaPapa);
+        didPrint = true;
+    }
+    
+    if (didPrint) {
+        printf("\n");
     }
 }
