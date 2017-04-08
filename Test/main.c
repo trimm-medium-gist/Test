@@ -11,6 +11,7 @@
 #include "IDPMamaPapa.h"
 #include "IDPFunctionMacro.h"
 #include "IDPBits.h"
+#include "IDPArray.h"
 
 IDPGeneratePrintFunction(int, %d);
 
@@ -25,6 +26,14 @@ int main(int argc, const char **argv) {
     
     IDPPrintIntBits(255);
     IDPPrintIntBits(3);
+    
+    IDPArray *array = IDPArrayCreate();
+    IDPArraySetLength(array, 300);
+    void *data = IDPArrayGetData(array);
+    *(char *)data = 1;
+    char x = *(char *)data;
+    
+    IDPArrayRelease(array);
     
     return 0;
 }

@@ -21,16 +21,9 @@ struct IDPArray {
 };
 
 IDPArray *IDPArrayCreate() {
-    const size_t defaultLength = IDPDefaultLength;
-
-    IDPArray *array = NULL;
-    size_t length = sizeof(*array);
-
-    array = (IDPArray *)malloc(length);
-    memset(array, 0, length);
-    
-    array->data = calloc(defaultLength, sizeof(*array->data));
-    array->length = defaultLength;
+    IDPArray *array = (IDPArray *)calloc(1, sizeof(*array));
+    IDPArrayRetain(array);
+    IDPArraySetLength(array, IDPDefaultLength);
     
     return array;
 }
@@ -43,7 +36,7 @@ void IDPArrayRelease(IDPArray *array) {
     size_t count = array->refCount - 1;
     array->refCount = count;
     if (!count) {
-        free(array->data);
+        IDPArraySetLength(array, 0);
         free(array);
     }
 }
