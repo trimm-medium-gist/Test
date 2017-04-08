@@ -8,8 +8,14 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+#include "IDPMamaPapa.h"
+
+int main(int argc, const char **argv) {
+    const int count = 16;
+   
+    for (int i = 0; i < count; i++) {
+        IDPPrintMamaPapa(i);
+    }
+    
     return 0;
 }
