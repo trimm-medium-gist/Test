@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D761C9FF1E98E7C10093F74E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D761C9FE1E98E7C10093F74E /* main.c */; };
+		D761CA071E98F0670093F74E /* IDPMamaPapa.c in Sources */ = {isa = PBXBuildFile; fileRef = D761CA051E98F0670093F74E /* IDPMamaPapa.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		D761C9FB1E98E7C10093F74E /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		D761C9FE1E98E7C10093F74E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D761CA051E98F0670093F74E /* IDPMamaPapa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IDPMamaPapa.c; sourceTree = "<group>"; };
+		D761CA061E98F0670093F74E /* IDPMamaPapa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDPMamaPapa.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				D761C9FE1E98E7C10093F74E /* main.c */,
+				D761CA051E98F0670093F74E /* IDPMamaPapa.c */,
+				D761CA061E98F0670093F74E /* IDPMamaPapa.h */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D761C9FF1E98E7C10093F74E /* main.c in Sources */,
+				D761CA071E98F0670093F74E /* IDPMamaPapa.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +252,7 @@
 				D761CA041E98E7C10093F74E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
